@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro de Veterinaria</h1>
+    
+        <form action="/registrar" method="POST">
+  <h2>Formulario de registro de clientes y mascotas</h2>
+  
+  <h3>Datos del cliente:</h3>
+
+  <label for="id_cliente">ID de cliente:</label>
+  <input type="number" id="id_cliente" name="id_cliente" placeholder="Ejemplo: 1234">
+
+  <label for="nombre_cliente">Nombre completo:</label>
+  <input type="text" id="nombre_cliente" name="nombre_cliente" placeholder="Ejemplo: Juan Pérez">
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" name="correo" placeholder="Ejemplo: correo@ejemplo.com">
+
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: (123) 456-7890">
+
+  <label for="direccion">Dirección:</label>
+  <textarea id="direccion" name="direccion" placeholder="Ejemplo: Calle 123, Ciudad, País"></textarea>
+
+  <label for="fecha_registro">Fecha de registro:</label>
+  <input type="date" id="fecha_registro" name="fecha_registro" placeholder="Ejemplo: AAAA-MM-DD">
+
+  <label for="membresia">Tipo de membresía:</label>
+<select name="membresia" id="membresia">
+  <option value="basica">Membresía básica</option>
+  <option value="premium">Membresía premium</option>
+</select>
+
+  <h3>Datos de la mascota:</h3>
+
+  <label for="id_mascota">ID de mascota:</label>
+  <input type="number" id="id_mascota" name="id_mascota" placeholder="Ejemplo: 5678">
+
+  <label for="nombre_mascota">Nombre de la mascota:</label>
+  <input type="text" id="nombre_mascota" name="nombre_mascota" placeholder="Ejemplo: Fido">
+
+  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Ejemplo: AAAA-MM-DD">
+
+  <label for="especie">Especie:</label>
+  <input type="text" id="especie" name="especie" placeholder="Ejemplo: Canino">
+
+  <label for="raza">Raza:</label>
+  <input type="text" id="raza" name="raza" placeholder="Ejemplo: Labrador">
+
+  <label for="sexo">Sexo:</label>
+  <select id="sexo" name="sexo">
+    <option value="">Seleccione una opción</option>
+    <option value="Macho">Macho</option>
+    <option value="Hembra">Hembra</option>
+  </select>
+
+  <label for="foto">Foto de la mascota:</label>
+  <input type="file" id="foto" name="foto" accept="image/*">
+
+  
+
+  <button type="submit">Enviar</button>
+</form>
+    
+</body>
+</html>
